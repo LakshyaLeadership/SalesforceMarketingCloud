@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Eloqua2Sfmc.Migrator": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7050",
+      "launchBrowser": false
+    }
+  }
+}
