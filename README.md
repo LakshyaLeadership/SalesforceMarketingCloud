@@ -26,7 +26,29 @@ To successfully execute the migration process, the following prerequisites are r
 
 ## Setup and Execution
 
-1. Clone the repository to your local machine:
+Clone the repository to your local machine:
 
    ```shell
    git clone https://github.com/your-username/sfmc-email-migration.git
+
+
+Update the following configuration variables in the C# code:
+
+cmsApiUrl: Replace with the URL of your CMS API endpoint.
+sfmcApiUrl: Replace with the URL of your SFMC API endpoint.
+sfmcSubscriberListId: Replace with the ID of your target subscriber list in SFMC.
+sfmcEmailTemplateId: Replace with the ID of your email template in SFMC.
+Install the necessary dependencies (if any) required by the C# program.
+
+Compile and run the C# program.
+
+Monitor the program execution for any errors or exceptions. Make sure to handle errors appropriately and implement exception management as needed.
+
+Additional Steps
+To enhance the migration process and further customize the solution, you may consider implementing the following:
+
+Retrieve an access token for SFMC API authentication: Modify the code to retrieve an access token using the client ID and client secret. This ensures secure authentication when making API calls to SFMC.
+
+Error Handling and Exception Management: Extend the code with proper error handling and exception management to handle potential issues during the API calls and program execution.
+
+Logging and Monitoring: Implement a logging mechanism to capture relevant information and monitor the execution of the program. This helps in troubleshooting and ensuring the smooth functioning of the migration process.
